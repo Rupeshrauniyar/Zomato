@@ -1,0 +1,92 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+transition: all .5s ease;
+
+}
+
+nav{
+height: 23vh;
+width: 100%;
+}
+nav img{
+width: 15vh;
+height: 15vh;
+object-fit: contain;
+padding: 0 10px;
+}
+  .login-container {
+    width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+.main{
+width: 100%;
+}
+.page1{
+width: 100%;
+height:20vh;
+position: relative;
+align-items: center;
+justify-content: center;
+display: flex;
+text-align: center;
+}
+
+.page1 #username,#password{
+width: 92vw;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+
+.page2{
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+.page2 button{
+width: 100%;
+padding: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+box-sizing: border-box;
+align-items: center;
+justify-content: center;
+display: flex;
+text-align: center;
+margin-top: 3vh;
+transition: all .5s ease;
+}
+ #button.checked {
+      background-color: #ff1515bf;
+    }
+
+    /* Button color when checkbox is not checked */
+    #button:not(.checked) {
+      background-color: #dadada;
+      color: #fff;
+    }
+.page2 h3{
+padding: 10px 12px;
+font-weight: 300;
+}
+.page2 p{
+padding: 0 10px;
+}
+#login-page{
+color: #ff1515bf;
+text-decoration: none;
+}
+#rules{
+color: #ff1515bf;
+text-decoration: none;
