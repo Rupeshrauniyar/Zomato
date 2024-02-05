@@ -13,7 +13,7 @@ function loginUser() {
         localStorage.setItem('loggedInUser', username);
         // Redirect to index page
         button.style.backgroundColor=" #ff1515bf"
-        window.location.href = 'index.html';
+        window.location.href = 'cart.html';
     } else {
         alert('Invalid username or password. Please try again.');
     }
@@ -44,3 +44,4 @@ function loginUser() {
                 iconElement.classList.remove("fa-eye");
             }
         }
+        

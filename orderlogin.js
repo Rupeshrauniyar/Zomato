@@ -18,3 +18,29 @@ function loginUser() {
         alert('Invalid username or password. Please try again.');
     }
 }
+
+
+  function togglePasswordVisibility() {
+            var password = document.getElementById("password");
+            var toggleBtn = document.getElementById("toggleBtn");
+
+            if (password.type === "password") {
+                password.type = "text";
+             
+            } else {
+                password.type = "password";
+               
+            }
+        }
+        
+          function toggleIcon() {
+            var iconElement = document.getElementById("toggleIcon");
+
+            if (iconElement.classList.contains("fa-eye-slash")) {
+                iconElement.classList.add("fa-eye");
+                iconElement.classList.remove("fa-eye-slash");
+            } else {
+                iconElement.classList.add("fa-eye-slash");
+                iconElement.classList.remove("fa-eye");
+            }
+        }

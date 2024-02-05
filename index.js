@@ -31,7 +31,7 @@ function logout() {
 const coveredDiv = document.getElementById('covered-div');
 const button = document.getElementById('more-button');
 const i = document.getElementById('i');
- var flag = 0
+var flag = 0
 button.addEventListener("click", function () {
 if (flag == 0) {  
 coveredDiv.style.height = "160px"

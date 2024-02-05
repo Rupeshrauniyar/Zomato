@@ -55,7 +55,7 @@ const newUser = { username, password };
 existingUsers.push(newUser);
 localStorage.setItem('users', JSON.stringify(existingUsers));
 alert('Registration successful!');     
-window.location.href = 'orderlogin.html';        
+window.location.href = 'cartlogin.html';        
 return;
       } else {
         alert("Password must be greater than 8 digits");
@@ -79,18 +79,17 @@ return;
         return;
       }
     });
-    
 
 
   function togglePasswordVisibility() {
-            var passwordInput = document.getElementById("passwordInput");
+            var password = document.getElementById("password");
             var toggleBtn = document.getElementById("toggleBtn");
 
-            if (passwordInput.type === "password") {
-                passwordInput.type = "text";
+            if (password.type === "password") {
+                password.type = "text";
              
             } else {
-                passwordInput.type = "password";
+                password.type = "password";
                
             }
         }
@@ -106,3 +105,4 @@ return;
                 iconElement.classList.remove("fa-eye");
             }
         }
+        
