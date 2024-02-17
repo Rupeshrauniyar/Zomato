@@ -7,25 +7,25 @@
         let totalBill = 0;
 
         for (const [product, info] of Object.entries(cartItems)) {
-            const h3 = document.createElement('h3');
+            const p = document.createElement('p');
             
             // Display image
             const img = document.createElement('img');
             img.src = info.imagePath;
             img.alt = product;
-            h3.appendChild(img);
+            p.appendChild(img);
 
             // Display product name, quantity, and rate
-            h3.innerHTML += `${product} - ${info.quantity} (Rate: ₹${getRate(product)})`;
-            orderItemsElement.appendChild(h3);
+            p.innerHTML += `${product} - ${info.quantity} (Rate: ₹${getRate(product)})`;
+            orderItemsElement.appendChild(p);
 
             // Calculate total bill
             totalBill += info.quantity * getRate(product);
         }
 
-        // Add 13% tax and ₹25 deh3very charge
+        // Add 13% tax and ₹25 depvery charge
         totalBill += totalBill * 0.02; // 13% tax
-        totalBill += 25; // ₹25 deh3very charge
+        totalBill += 25; // ₹25 depvery charge
 
         // Display total bill
         const totalBillElement = document.getElementById('total-bill');

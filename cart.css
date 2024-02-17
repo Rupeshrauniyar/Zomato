@@ -41,6 +41,12 @@ padding: 10px 20px;
 text-transform: uppercase;
 
 }
+.item button {
+box-shadow: 0 0 5px #ff1515bf,
+0 0 25px #ff1515bf;
+}
+
+
 .user{
  padding: 0 10px;
 }
@@ -177,7 +183,7 @@ width: 10vh;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      height: 43vh;
+      min-height: 38vh;
      
 }
 
@@ -204,10 +210,7 @@ margin-left: 1vh;
       animation: pulse 1.5s infinite alternate;
     }
 
-/* .card button:hover{
- background-color: #fff;
-}
- */
+ 
    .card button::before {
       content: "";
       position: absolute;
@@ -218,14 +221,7 @@ margin-left: 1vh;
      
       animation: lineAnimation 2s linear infinite;
     }
-     /*   @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(0.9);
-      }
-    }  */
+    
 .img-container{
  display: flex;
  align-items: center;
@@ -243,7 +239,7 @@ margin-left: 1vh;
  
 }
 .card{
-   position: relative;
+      position: relative;
       width:47vh;
       border-radius: 10px;
       overflow: hidden;
@@ -269,4 +265,145 @@ margin-left: 1vh;
   width: 52vh;
  height:30vh ;
  overflow: hidden;
+ transition: all .55s ease;
+}
+
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 10px;
+  min-height: 45vh;
+  overflow: hidden; /* Ensure that the scaled image remains contained */
+}
+
+#scalable-container {
+  width: 52vh;
+  height: 28vh;
+  overflow: hidden; /* Ensure that the scaled image remains contained */
+  transition: all 0.55s ease;
+}
+
+
+#restaurantDetails{
+     margin-top: 1vh;
+      position: relative;
+      width:100%;
+      min-height: 30vh;
+      border-radius: 10px;
+      overflow: hidden;
+      
+}
+#restaurantDetails img{
+ object-fit: cover;
+ width: 100%;
+ height:36vh; 
+}
+
+
+#restaurantDetails h4{
+ text-align: center;
+ color: #ff1515bf;
+ font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+ font-size: 30px;
+ font-weight: 1;
+}
+.page3-img-details p{
+ font-weight: 200;
+}
+.page3-img-details h3{
+ font-weight: 400;
+ padding: 0 5px;
+}
+
+
+#no-result{
+ display: none;
+}
+
+#no-result img{
+ width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.page4{
+ width: 100%;
+ min-height: 110vh;
+ background-color: #e8e8e8c9;
+ }
+ .page4-container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+ height: 50vh;
+ color: red;
+}
+.page4 img{
+ padding: 2px 10px;
+ width:20vh ;
+ height:20vh ;
+ object-fit: contain;
+}
+
+.page4-part1{
+ display: inline-block;
+ width: 50%;
+} 
+
+.page4 a{
+text-decoration: none;
+color: #00000098;
+font-family: gilroy;
+font-weight: 300;
+}
+
+.page4-part3{
+ width: 100%;
+ height: 40vh;
+ border-bottom: 1px solid #000;
+ display:inline-block;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ text-align: center;
+ 
+}
+.page4-part3 i{
+ border: 2px solid #000;
+ width: 2vh;
+ height: 2vh;
+ text-align: center;
+ background-color: #000;
+ border-radius: 25px;
+ color: #fff;
+ object-fit: contain;
+margin-top: 20px;
+margin-right: 10px;
+}
+
+
+.page4-part4{
+  width: 100%;
+ height: 30vh;
+ background-color: #e8e8e8c9;
+}
+
+.page4-part4 p{
+ text-align: left;
+ padding: 20px;
+ font-family: gilroy;
+ font-weight: 299;
 }

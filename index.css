@@ -189,12 +189,15 @@ display: flex;
 
 .page3{
  width: 98%;
- min-height: 100vh;
+ min-height:55vh;
  
 }
 .page3 a,h6,h,h35,p2,p{
  text-decoration: none;
  color: #000;
+}
+.page3-img-container a{
+ color: initial;
 }
 .page3-img-container{
  display: flex;
@@ -308,7 +311,7 @@ margin-right: 10px;
  background-color: #e8e8e8c9;
 }
 
-.page4-part4 p3{
+.page4-part4 p{
  text-align: left;
  padding: 20px;
  font-family: gilroy;

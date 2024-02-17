@@ -52,3 +52,12 @@ flag = 0
       
       },
     );
+
+
+function redirectToCart(title, imageSrc) {
+  localStorage.setItem('selectedTitle', title);
+  localStorage.setItem('selectedImage', imageSrc);
+window.location.href = "cart.html?restaurantTitle=" + title + "&restaurantImage=" + imageUrl;
+ 
+}
+
